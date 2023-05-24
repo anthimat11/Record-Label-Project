@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(54,55,57);
+}
+.artist-pic{
+    width:600px;
+    height: 500px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.artist-name{
+    margin:30px;
+    color:yellow;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.description{
+    color:black;
+    width:90%;
+    background-color: rgba(115, 106, 106, 0.747);
+    line-height: 1.5;
+    font-size: 0.9rem;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.songs{
+    margin:20px;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+ol{
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-box{
+    color:yellow;
+    display: list-item;
+   /* background-image: url(../img/heart.png);*/
+    background-repeat: no-repeat;
+    background-size: 3%;
+    background-position: right;
+}
+
+.liked{
+    background-image: url(../img/heartred.png);
+    background-repeat: no-repeat;
+    background-size: 3%;
+    background-position: right;
+}
+
+form{
+    margin:20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.addBtn{
+    width:100px;
+    margin-left: 20px;
+    float:right;
+}
+
+.likeSong{
+    justify-content: flex-end;
+    font-size: 1rem;
+    float: right;
+    font-weight: lighter;
+}
+
+

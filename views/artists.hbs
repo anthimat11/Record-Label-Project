@@ -1,0 +1,32 @@
+<body>
+    <main>
+
+        <div class="container row">
+            <div class="col-lg">
+                <ul class="list-group">
+                        {{#each artists}}
+                        <li class="artist-box">
+                            <div class="container row">
+                                <div class="col-4"><img src="{{image}}" alt="{{name}}" title="{{name}}" class="artist-pic"></div>
+                            <ul class="artist-list col">
+                                <li><a href='/artistSongs/?id={{artist_id}}' class="artist-name">{{name}}</a></li>
+                                <li><span>Find them on <a href='spotify.com' class="social">spotify</a></span></li>
+                                <li><span>{{sm_description}}...</span></li>
+                                {{#if_cond ../userType "==" "admin"}}<li><a href = "artists/delete/{{../this.artist_id}}"><button class="eraseBtn">Delete</button></a></li>{{/if_cond}}
+                            </ul>
+                            </div>
+                        {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        {{#if_cond userType "==" "admin"}}
+            <div class="container row">
+                <a href="/artistForm"><button class="addBtn">+Add Artist</button></a></div></li>
+            </div>
+        {{/if_cond}}
+
+    </main>
+
+    <script src = "../src/artists.js"> </script>
+</body>

@@ -1,0 +1,43 @@
+<body>
+    <main>
+        <div class="container">
+            <div class="row artist-name">
+                {{artist}}
+            </div>
+            <div class="row">
+                <div class="col align-self-start">
+                    <img src="{{img}}" alt="{{artist}}" title="{{artist}}" class="artist-pic">
+                </div>
+                <div class="col align-items-end">
+                    <div class="row-md description">
+                        {{description}}
+                    </div>
+                </div>
+                <div class="row-md songs">
+                        <ol>
+                            {{#each songs}}
+                                    <li class="artist-box buttons">
+                                        {{#if_cond ../userType "==" "admin"}} <a href = "/artistSongs/delete/{{../this.artist_id}}/{{../this.song_id}}"><button class="eraseBtn">Delete</button></a>{{/if_cond}}
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" >{{this.name}}</a>
+                                        {{#if_cond ../userType "==" "user"}} <a href = "/artistSongs/addToMyPlaylist/{{../this.artist_id}}/{{../this.song_id}}/{{../this.name}}"><button class="likeSong">Add to my Playlist</button></a>{{/if_cond}}</li>
+                            {{/each}}
+                        </ol>
+                    </div>
+            </div>
+          {{#if_cond userType "==" "admin"}}  
+            <form method = "GET", action = "/artistSongs/{{../id}}/submit" class="container row">
+                <input type="text" placeholder="Enter new Song" name="newSong" class = "col-sm">
+                <button class="addBtn col-sm" type = "submit">+Add Song</button>
+                <div class="col"></div>
+                <div class="col"></div>
+            </form>
+           {{/if_cond}} 
+        </div>
+        
+         
+       
+
+    </main>
+
+    <script src = "../src/artists.js"> </script>
+</body>

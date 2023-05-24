@@ -1,0 +1,32 @@
+form{
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    font-size: 1.5rem;
+    border: solid;
+    margin: 30px;
+    background-color:  rgba(75, 72, 72, 0.832);
+    border-radius: 8px;
+    padding:30px;
+    width: 50%;
+    height:50%;
+}
+
+label{
+    margin-top:10px;
+    display: block;
+}
+
+.signup{
+    border: none;
+    margin: 15px 10px;
+}
+
+
+
+#error-msg{
+    font-weight: 400;
+    font-size: 1rem;
+    color:rgb(232, 42, 42);
+}

@@ -1,0 +1,24 @@
+<body>
+    <main>
+       <div class="container col">
+            <div class=" introduction"> Welcome <div class="username">&nbsp;&nbsp;{{username}} </div>&nbsp;!</div>
+            <div class="row text">We've assembled a playlist brimming with your hand-picked favorite tunes;&rpar;</div>
+            <div class="row">
+                <ol class="song-list">
+                    {{#if songs}}
+                    {{#each songs}}
+                    <li class="item"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" >{{name}}</a> &nbsp;&nbsp; by &nbsp;&nbsp;
+                    <a href="/artistSongs/?id={{artist_id}}"> {{artistName}}</a>
+                    <a href = "/myPlaylist/remove/{{user_id}}/{{song_id}}"><button class="removeBtn">Remove</button></a></li>
+                    {{/each}}
+                    {{else}}
+                    <div>
+                        There is nothing here:&lpar;<br><br><br>
+                    </div>
+                    {{/if}}
+                </ol>
+            </div>
+       </div>
+
+      </main>  
+</body>

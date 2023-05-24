@@ -1,0 +1,28 @@
+<body>
+    <main>
+        <form action="/login/login">
+          <div id="error-msg">
+                {{#if loginError}}
+                <li>{{loginError.message}}</li>
+                {{/if}}
+            </div>
+
+          <fieldset class="signup">
+            <legend class="signup">Log in to your account!</legend> 
+            <label for="email">Username</label>
+            <input type="text"
+                    name="usernameLogin"
+                    id="username"
+                    placeholder="anthitsa"
+                    required>
+              <label for="password">Password</label>
+              <input type="password"
+                        name="passwordLogin"
+                        id="password"
+                        placeholder="georgesmith123"
+                        required>
+            </fieldset>
+              <button type="submit">Go!</button>
+        </form>    
+  </main>
+</body>

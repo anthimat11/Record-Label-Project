@@ -1,0 +1,35 @@
+.introduction{
+    color:  black;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:20px;
+}
+
+.username{
+    color:yellow;
+}
+
+.text{
+    color:black;
+    font-size:1.5rem;
+    margin-bottom: 10px;
+}
+
+.song-list{
+    color:black;
+    float:left;
+    border: solid rgba(0, 0, 0, 0.408);
+    border-radius: 6px;
+    font-size: 1.5rem;
+}
+.item{
+    display: list-item;
+    list-style-position: inside;
+    margin:10px;
+}
+
+.removeBtn{
+    float:right;
+}

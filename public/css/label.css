@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(26, 24, 24);
+}
+
+main{
+    background: url(../img/background4.jpg) no-repeat center center; 
+    background-size: 1700px 1080px;
+}   
+
+
+.intro{
+    display:block;
+    font-size:65%;
+    color: black;
+    padding: 40px 20px;
+    margin-top: 10%;
+    margin-left: 20%;
+    border-style: outset;
+    border-radius: 20px;
+    box-shadow: 3px 3px gray;
+    line-height: 150%;
+    width:50%;
+    height: 50%;
+    background-color: rgb(255, 255, 47);
+    opacity: 90%;
+  }
+
+  .intro-link{
+    color:black;
+  }
+ 
+  

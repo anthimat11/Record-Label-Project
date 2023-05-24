@@ -1,0 +1,41 @@
+.description{
+    margin-top: 40px;
+}
+
+main{
+    color:black;
+    background: url(../img/background4.jpg) no-repeat center center; 
+    background-size: 1700px 1080px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+span{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title{
+    font-size:1.5rem;
+}
+
+.intro{
+    font-size: 1.1rem;
+    border: solid yellow;
+    border-radius: 8px;
+    margin-bottom:30px;
+    text-align:center;
+    background-color:  rgba(171, 164, 164, 0.832);
+}
+
+.info{
+    padding:20px;
+    text-align:center;
+    border:solid yellow;
+    margin:20px;
+    font-size: 1.2rem;
+    margin-bottom: 80px;
+    background-color:  rgba(171, 164, 164, 0.832);
+    border-radius: 8px;
+}

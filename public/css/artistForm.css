@@ -1,0 +1,12 @@
+
+form{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border: solid yellow;
+    margin: 20px;
+    padding: 50px;
+    background-color:  rgba(75, 72, 72, 0.832);
+    border-radius: 8px;
+    width: 600px;
+}

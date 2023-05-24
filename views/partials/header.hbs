@@ -1,0 +1,24 @@
+<div class="logo">
+        Rio Records
+        <div class="slogo">
+           Build your artist career on 
+            <br> your own terms.
+        </div>
+    </div>
+  
+    <nav>
+        <ul class="navbar">
+          <li><a href="/label" class="label {{label}}">Label</a></li>
+          <li><a href="/artists" class="{{artists_page}}">Artists</a></li>
+          <li><a href="/myPlaylist" class="about {{myPlaylist}}">My playlist</a></li>
+          <li><a href="/about" class="about {{about}}">About us</a></li>
+          {{#if username}}
+          <li><div class="login greeting">Hi {{username}}</div>
+          <a href ="/login/logout" class="login"><br>Log Out</a></li>
+          {{else}}
+          <li><a href ="/login" class="login {{login}}">Log in</a>
+            <a href ="/signup" class="login {{signup}}"><br>Sign up</a>
+          </li>
+          {{/if}}
+        </ul>
+    </nav>

@@ -1,0 +1,33 @@
+<body>
+    <main>
+        <form action="/signup/signup">
+            <div id="error-msg">
+                {{#if loginError}}
+                <li>{{loginError.message}}</li>
+                {{/if}}
+            </div>
+            <fieldset class="signup">
+                  <legend class="signup">Create your account!</legend> 
+                  <label for="username">Username</label>
+                  <input type="text"
+                         name="usernameSignUp"
+                         id="username"
+                         placeholder="smith123"
+                         required>
+                <label for="password">Password</label>
+                <input type="password"
+                        name="passwordSignUp"
+                        id="password"
+                        placeholder="georgesmith123"
+                        required>
+                    <span id = "message"></span>
+            </fieldset>
+            <button type="submit" id="createBtn">Create!</button>
+        </form>
+              
+  
+  </main>
+
+    <!--<script src = "../src/signup.js"> </script>-->
+      
+</body>
